@@ -16,7 +16,7 @@ int main()
 	float secondDigit;
 	std::cout << "What is the second digit of your operation: ";
 	std::cin >> secondDigit;
-	if (operand == "+"){
+	if (operand == "+") {
 		std::cout << firstDigit << "+" << secondDigit << " = " << firstDigit + secondDigit;
 	}
 	else if (operand == "-") {
@@ -30,12 +30,14 @@ int main()
 		main();
 	}
 	else if (operand == "*") {
-		std::cout << firstDigit << "*" << secondDigit << " = " << firstDigit * secondDigit; 
+		std::cout << firstDigit << "*" << secondDigit << " = " << firstDigit * secondDigit;
 	}
 	else if (operand != "+" || "*" || "+" || "-") {
 		std::cout << "Please enter a valid operand : ";
 		main();
 	}
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
